@@ -15,12 +15,12 @@ export const useFirebase = (
 
   const { onError, onSuccess, onRequestService } = config || {};
 
-  const onRequest = async (params) => {
+  const onRequest = async (...params) => {
     setLoading(true);
 
     setError(null);
 
-    await onRequestService(params)
+    await onRequestService(...params)
       .then((response) => {
         console.log(response);
         setData(response);

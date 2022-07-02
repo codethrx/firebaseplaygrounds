@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 //pages
 import Signup from "./pages/Signup";
 import Login from "./pages/Signup";
+import FireOperations from "./pages/FireOperations";
 //context
 import useAuthContext from "./context/AuthContext/useAuthContext";
 import Api from "./firebase/API";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Login />} />
+        <Route path="/crud" element={<FireOperations />} />
         <Route />
       </Routes>
     </div>
