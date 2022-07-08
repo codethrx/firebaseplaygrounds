@@ -7,9 +7,11 @@ const Api = {
     signIn: AuthService.login,
   },
   firestore: {
-    addData: DatabaseService.addData,
+    addDoc: DatabaseService.addData,
     updateDoc: DatabaseService.updateDoc,
     deleteDoc: DatabaseService.deleteDoc,
+    getDocs: DatabaseService.getDocs,
+    getDoc: DatabaseService.getDoc,
   },
 };
 export default Api;

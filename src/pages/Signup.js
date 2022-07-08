@@ -8,7 +8,8 @@ function Signup() {
   const { email, password } = formData;
   const { user, dispatchUserCreds } = useAuthContext();
   const { data, isLoading, error, onRequest, setError } = useFirebase({
-    onRequestService: Api.auth.createAccount,
+    // onRequestService: Api.auth.createAccount,
+    onRequestService: Api.auth.signIn,
   });
   useEffect(() => {
     if (data) {

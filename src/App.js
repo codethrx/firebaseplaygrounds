@@ -20,6 +20,7 @@ function App() {
     await onRequest();
     dispatchUserCreds({ type: AUTH_ACTIONS.LOG_OUT });
   };
+  console.log(user);
   return (
     <div className="App">
       <h1>Hello</h1>
